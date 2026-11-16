@@ -1,0 +1,18 @@
+\begin{table}[h]
+\caption{Accuracy of a single-threshold classifier (one-split decision tree, 5-fold cross-validation on 50,000 PhiUSIIL URLs) for the strongest individual features of each set}\label{tab:features}%
+\begin{tabular}{@{}llr@{}}
+\toprule
+Feature set & Feature & Accuracy (\%) \\
+\midrule
+Provided & \texttt{URLSimilarityIndex} & 99.66 \\
+Provided & \texttt{NoOfExternalRef} & 96.09 \\
+Provided & \texttt{LineOfCode} & 95.56 \\
+Provided & \texttt{NoOfSelfRef} & 94.74 \\
+Provided & \texttt{NoOfImage} & 94.18 \\
+Lexical & \texttt{path\_length} & 82.74 \\
+Lexical & \texttt{num\_slashes} & 82.74 \\
+Lexical & \texttt{is\_https} & 79.13 \\
+\botrule
+\end{tabular}
+\footnotetext{In the full dataset, 100.0\% of legitimate URLs have no path (not even a trailing slash), 0.0\% have a query string and 100.0\% use HTTPS; for phishing URLs the shares are 40.1\%, 6.0\% and 48.7\%, and 32.7\% end in a single slash.}
+\end{table}

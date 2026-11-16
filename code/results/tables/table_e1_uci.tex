@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{E1 results on the UCI dataset: accuracy (\%) reported by the reference study, obtained with its protocol (A) and with leakage-free nested cross-validation (B, mean $\pm$ s.d.\ over five outer folds), their difference, and the MCC under protocol B}\label{tab:e1-uci}%
+\begin{tabular}{@{}lcccrc@{}}
+\toprule
+Model & Reported & Protocol A & Protocol B & A $-$ B & MCC (B) \\
+\midrule
+LogR & 92.33 & 92.82 & 92.57 $\pm$ 0.28 & $+0.25$ & 0.850 \\
+SVM & 97.04 & 96.31 & 95.91 $\pm$ 0.15 & $+0.40$ & 0.917 \\
+NB & 91.27 & 78.44 & 75.71 $\pm$ 1.21 & $+2.73$ & 0.598 \\
+KNN & 97.04 & 96.96 & 96.45 $\pm$ 0.36 & $+0.52$ & 0.928 \\
+DT & 96.69 & 96.65 & 96.39 $\pm$ 0.48 & $+0.26$ & 0.927 \\
+RF & 97.44 & 97.48 & 97.04 $\pm$ 0.25 & $+0.44$ & 0.940 \\
+GB & 97.47 & 97.34 & 96.70 $\pm$ 0.11 & $+0.65$ & 0.933 \\
+XGB & 97.26 & 97.58 & 97.11 $\pm$ 0.34 & $+0.47$ & 0.941 \\
+\botrule
+\end{tabular}
+\end{table}

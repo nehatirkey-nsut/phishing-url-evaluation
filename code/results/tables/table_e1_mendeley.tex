@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{E1 results on the Mendeley dataset: accuracy (\%) reported by the reference study, obtained with its protocol (A) and with leakage-free nested cross-validation (B, mean $\pm$ s.d.\ over five outer folds), their difference, and the MCC under protocol B}\label{tab:e1-mendeley}%
+\begin{tabular}{@{}lcccrc@{}}
+\toprule
+Model & Reported & Protocol A & Protocol B & A $-$ B & MCC (B) \\
+\midrule
+LogR & 93.88 & 94.49 & 94.48 $\pm$ 0.45 & $+0.01$ & 0.890 \\
+SVM & 96.79 & 97.05 & 97.02 $\pm$ 0.59 & $+0.03$ & 0.940 \\
+NB & 86.99 & 84.62 & 84.62 $\pm$ 0.95 & $+0.00$ & 0.707 \\
+KNN & 95.41 & 95.75 & 95.49 $\pm$ 0.21 & $+0.26$ & 0.910 \\
+DT & 96.17 & 97.04 & 96.90 $\pm$ 0.33 & $+0.14$ & 0.938 \\
+RF & 97.79 & 98.33 & 98.34 $\pm$ 0.17 & $-0.01$ & 0.967 \\
+GB & 98.27 & 98.50 & 98.39 $\pm$ 0.57 & $+0.11$ & 0.968 \\
+XGB & 98.21 & 98.83 & 98.87 $\pm$ 0.19 & $-0.04$ & 0.977 \\
+\botrule
+\end{tabular}
+\end{table}

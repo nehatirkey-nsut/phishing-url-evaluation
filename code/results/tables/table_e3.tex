@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\caption{E3 results on PhiUSIIL: training time, prediction and lexical-feature extraction time per URL, and MCC at $r=1$ and $r=100$ for the provided features (Prov., 50 features) and the URL-only lexical features (Lex., 23 features)}\label{tab:e3}%
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Feat. & Model & Train (s) & Pred.\ ($\mu$s) & Extr.\ ($\mu$s) & MCC$_{r=1}$ & MCC$_{r=100}$ \\
+\midrule
+Prov. & LogR & 0.2 & 0.5 & -- & 0.998 & 0.989 \\
+Prov. & SVM & 0.3 & 15.6 & -- & 0.999 & 0.997 \\
+Prov. & NB & 0.1 & 0.5 & -- & 0.999 & 0.976 \\
+Prov. & KNN & 0.1 & 16.1 & -- & 0.985 & 0.795 \\
+Prov. & DT & 0.1 & 0.5 & -- & 1.000 & 1.000 \\
+Prov. & RF & 1.9 & 4.3 & -- & 1.000 & 1.000 \\
+Prov. & GB & 2.8 & 1.0 & -- & 1.000 & 1.000 \\
+Prov. & XGB & 0.4 & 1.2 & -- & 1.000 & 1.000 \\
+Lex. & LogR & 0.1 & 0.3 & 11.8 & 0.912 & 0.706 \\
+Lex. & SVM & 1.2 & 67.9 & 11.8 & 0.982 & 0.986 \\
+Lex. & NB & 0.1 & 0.4 & 11.8 & 0.979 & 0.787 \\
+Lex. & KNN & 0.0 & 10.3 & 11.8 & 0.976 & 0.784 \\
+Lex. & DT & 0.1 & 0.3 & 11.8 & 0.986 & 0.825 \\
+Lex. & RF & 1.1 & 9.3 & 11.8 & 0.989 & 0.926 \\
+Lex. & GB & 1.4 & 1.0 & 11.8 & 0.989 & 0.970 \\
+Lex. & XGB & 0.4 & 2.2 & 11.8 & 0.987 & 0.902 \\
+\botrule
+\end{tabular}
+\end{table}
