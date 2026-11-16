@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+# downloaded datasets (re-fetched automatically; Mendeley is a manual download)
+data/
+# smoke-test output is not part of the results
+results/synthetic/
